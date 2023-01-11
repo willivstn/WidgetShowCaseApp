@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup;
         radioGroup = findViewById(R.id.radioGroup1);
         Button b2;
+
+        //Progress Bar
+        ProgressBar progressBar = findViewById(R.id.progressBar);
+        progressBar.setProgress(0);
+       // progressBar.incrementProgressBy();
 
 
         //Time picker
@@ -94,7 +100,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                //Increase Progress by 10%
+                progressBar.incrementProgressBy(10);
 
                 if(box1.isChecked()){
                     Toast.makeText(MainActivity.this, "Cheese Topping is added", Toast.LENGTH_SHORT).show();

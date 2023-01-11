@@ -8,16 +8,15 @@
     tools:context=".MainActivity">
 
     <CheckBox
-        android:textColor="@color/white"
         android:id="@+id/checkbox1"
         android:layout_width="133dp"
         android:layout_height="41dp"
         android:text="Cheese"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/checkbox2"
         app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
 
     <CheckBox
-        android:textColor="@color/white"
         android:id="@+id/checkbox2"
         android:layout_width="132dp"
         android:layout_height="41dp"
@@ -25,6 +24,7 @@
         android:layout_marginTop="192dp"
         android:layout_marginBottom="183dp"
         android:text="Tomato"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btn"
         app:layout_constraintEnd_toStartOf="@+id/spinner1"
         app:layout_constraintHorizontal_bias="0.01"
@@ -48,27 +48,27 @@
         app:layout_constraintTop_toBottomOf="@+id/checkbox1">
 
         <RadioButton
-            android:textColor="@color/white"
             android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="With Delivery" />
+            android:text="With Delivery"
+            android:textColor="@color/white" />
 
         <RadioButton
-            android:textColor="@color/white"
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Without Delivery" />
+            android:text="Without Delivery"
+            android:textColor="@color/white" />
     </RadioGroup>
 
 
     <Spinner
-        android:background="@color/white"
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,6 +92,18 @@
         android:text="Choose Date"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:max="100"
+        app:layout_constraintBottom_toTopOf="@+id/checkbox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
